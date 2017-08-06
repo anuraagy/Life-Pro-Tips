@@ -8,23 +8,19 @@ const functions = require('firebase-functions');
 // Handlers
 
 const welcomeHandler = app => {
-  const json = JSON.parse(require('fs').readFileSync('data.json', 'utf8'));
-  const num = Math.floor((Math.random() * 969) + 1);
-
+  const json  = JSON.parse(require('fs').readFileSync('data.json', 'utf8'));
+  const num   = Math.floor((Math.random() * 969) + 1);
   const title = json[num].title;
-  const author = json[num].author;
 
-  app.ask('Welcome to Life Pro Tips! Here your tip of the day: ' + title + '. Would you like another tip?' );
+  app.ask('Welcome to Life Pro Tips! Here your tip of the day. ' + title + '. Would you like another tip?' );
 }
 
 const tipHandler = app => {
-  const json = JSON.parse(require('fs').readFileSync('data.json', 'utf8'));
-  const num = Math.floor((Math.random() * 969) + 1);
-
+  const json  = JSON.parse(require('fs').readFileSync('data.json', 'utf8'));
+  const num   = Math.floor((Math.random() * 969) + 1);
   const title = json[num].title;
-  const author = json[num].author;
 
-  app.ask(title + " brought to you by: " + author + ". Would you like another tip?");
+  app.ask(title + ". Would you like another tip?");
 }
 
 const actionMap = new Map();
