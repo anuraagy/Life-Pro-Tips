@@ -12,7 +12,7 @@ const welcomeHandler = app => {
   const num   = Math.floor((Math.random() * 969) + 1);
   const title = json[num].title;
 
-  app.ask('Welcome to Life Pro Tips! Here your tip of the day. ' + title + '. Would you like another tip?' );
+  app.ask('Welcome to Life Pro Tips! Here is your tip of the day. ' + title + '. Would you like another tip?' );
 }
 
 const tipHandler = app => {
