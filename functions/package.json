@@ -1,10 +1,10 @@
 {
   "name": "Life-Pro-Tips",
   "description": "Gives you a life pro tip everyday",
-  "version": "0.0.1",
-  "private": true,
-  "license": "Apache Version 2.0",
-  "author": "Google Inc.",
+  "version": "1.0.0",
+  "private": false,
+  "license": "MIT License",
+  "author": "Anuraag Yachamaneni",
   "engines": {
     "node": "~6.0"
   },
